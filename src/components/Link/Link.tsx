@@ -1,5 +1,9 @@
-import React from "react";
+import React, { FC, ReactNode } from "react";
+import { Wrapper } from "./Link.style";
+import { LinkProps } from "@mui/material/Link";
 
-export const Link = () => {
-  return <div>Link</div>;
+interface Props extends LinkProps {}
+
+export const Link: FC<Props> = ({ ...props }) => {
+  return <Wrapper {...props} />;
 };

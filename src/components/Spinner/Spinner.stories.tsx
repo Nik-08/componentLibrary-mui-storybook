@@ -5,7 +5,7 @@ import { ComponentProps } from "react";
 type T = ComponentProps<typeof Spinner>;
 
 export default {
-  title: "Spinner",
+  title: "UI/Spinner",
   component: Spinner,
 } as Meta;
 

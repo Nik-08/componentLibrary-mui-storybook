@@ -1,5 +1,9 @@
-import React from "react";
+import React, { FC, ReactNode } from "react";
+import { Wrapper } from "./List.style";
+import { ListProps } from "@mui/material/List";
 
-export const List = () => {
-  return <div>List</div>;
+interface Props extends ListProps {}
+
+export const List: FC<Props> = ({ ...props }) => {
+  return <Wrapper {...props} />;
 };

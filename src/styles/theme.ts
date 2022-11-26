@@ -1,5 +1,4 @@
 import { createTheme } from "@mui/material/styles";
-
 import { themeVariables } from "./themeVariables";
 
 const theme = createTheme(themeVariables, {

@@ -5,7 +5,7 @@ import { ComponentProps } from "react";
 type T = ComponentProps<typeof Button>;
 
 export default {
-  title: "Button",
+  title: "UI/Button",
   component: Button,
   argTypes: {
     children: {
