@@ -26,6 +26,7 @@ const Template: ComponentStory<typeof Dialog> = (args) => {
       <Dialog
         {...args}
         open={open}
+        onClose={handleClose}
         dialogActionContent={
           <Button variant='outlined' onClick={handleClose}>
             Close

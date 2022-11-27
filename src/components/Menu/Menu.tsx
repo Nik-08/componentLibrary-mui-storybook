@@ -1,5 +1,9 @@
-import React from "react";
+import { FC } from "react";
+import { Wrapper } from "./Menu.style";
+import { MenuProps } from "@mui/material/Menu";
 
-export const Menu = () => {
-  return <div>Menu</div>;
+interface Props extends MenuProps {}
+
+export const Menu: FC<Props> = ({ ...props }) => {
+  return <Wrapper {...props} />;
 };

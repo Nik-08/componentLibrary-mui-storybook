@@ -1,5 +1,9 @@
-import React from "react";
+import { FC } from "react";
+import { Wrapper } from "./Pagination.style";
+import { PaginationProps } from "@mui/material/Pagination";
 
-export const Pagination = () => {
-  return <div>Pagination</div>;
+interface Props extends PaginationProps {}
+
+export const Pagination: FC<Props> = ({ ...props }) => {
+  return <Wrapper {...props} />;
 };

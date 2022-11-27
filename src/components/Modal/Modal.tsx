@@ -1,5 +1,9 @@
-import React from "react";
+import { FC } from "react";
+import { Wrapper } from "./Modal.style";
+import { ModalProps } from "@mui/material/Modal";
 
-export const Modal = () => {
-  return <div>Modal</div>;
+interface Props extends ModalProps {}
+
+export const Modal: FC<Props> = ({ ...props }) => {
+  return <Wrapper {...props} />;
 };

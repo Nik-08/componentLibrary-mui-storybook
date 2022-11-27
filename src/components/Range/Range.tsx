@@ -1,5 +1,9 @@
-import React from "react";
+import { FC } from "react";
+import { Wrapper } from "./Range.style";
+import { SliderProps } from "@mui/material/Slider";
 
-export const Range = () => {
-  return <div>Range</div>;
+interface Props extends SliderProps {}
+
+export const Range: FC<Props> = ({ ...props }) => {
+  return <Wrapper {...props} />;
 };

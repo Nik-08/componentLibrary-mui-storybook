@@ -1,5 +1,9 @@
-import React from "react";
+import { FC } from "react";
+import { Wrapper } from "./RadioButton.style";
+import { RadioGroupProps } from "@mui/material/RadioGroup";
 
-export const RadioButton = () => {
-  return <div>RadioButton</div>;
+interface Props extends RadioGroupProps {}
+
+export const RadioButton: FC<Props> = ({ ...props }) => {
+  return <Wrapper {...props} />;
 };

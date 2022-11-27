@@ -1,5 +1,16 @@
-import React from "react";
+import { FC } from "react";
+import { Wrapper } from "./Autocomplete.style";
+import { AutocompleteProps } from "@mui/material/Autocomplete";
+import { ChipTypeMap } from "@mui/material/Chip";
 
-export const Autocomplete = () => {
-  return <div>Autocomplete</div>;
+type Props<T> = AutocompleteProps<
+  T,
+  boolean | undefined,
+  boolean | undefined,
+  boolean | undefined,
+  ChipTypeMap["defaultComponent"]
+>;
+
+export const Autocomplete: FC<Props<unknown>> = ({ ...props }) => {
+  return <Wrapper {...props} />;
 };
