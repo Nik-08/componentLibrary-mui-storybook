@@ -1,5 +1,9 @@
-import React from "react";
+import { FC } from "react";
+import { Wrapper } from "./Select.style";
+import { SelectProps } from "@mui/material/Select";
 
-export const Select = () => {
-  return <div>Select</div>;
+interface Props extends SelectProps {}
+
+export const Select: FC<Props> = ({ ...props }) => {
+  return <Wrapper {...props} />;
 };

@@ -1,1 +1,1 @@
-export { Accordion } from "./Badge";
+export { Badge } from "./Badge";

@@ -1,5 +1,7 @@
-import React from "react";
+import React, { FC } from "react";
+import { Wrapper } from "./Tabs.style";
+import { TabsProps } from "@mui/material/Tabs";
 
-export const Tabs = () => {
-  return <div>Tabs</div>;
-};
+interface Props extends TabsProps {}
+
+export const Tabs: FC<Props> = ({ ...props }) => <Wrapper {...props} />;
