@@ -4,7 +4,7 @@ import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { Button, Typography, MenuItem } from "@mui/material";
 
 export default {
-  title: "UI/Menu",
+  title: "Menu/Menu",
   component: Menu,
 } as ComponentMeta<typeof Menu>;
 

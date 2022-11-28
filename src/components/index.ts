@@ -15,6 +15,8 @@ export { Input } from "./Input";
 export { Link } from "./Link";
 export { List } from "./List";
 export { Menu } from "./Menu";
+export { MenuItem } from "./MenuItem";
+export { MenuList } from "./MenuList";
 export { Modal } from "./Modal";
 export { Pagination } from "./Pagination";
 export { RadioButton } from "./RadioButton";
